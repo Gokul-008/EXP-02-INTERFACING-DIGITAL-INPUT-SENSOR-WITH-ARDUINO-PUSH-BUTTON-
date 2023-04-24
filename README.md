@@ -1,4 +1,4 @@
-# EXP-02-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON
+# EXP-01-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON
 
 AIM:  To interface a digital input (push button) and blink and LED upon activation.
 COMPONENTS REQUIRED:
@@ -35,7 +35,7 @@ FIGURE-01
 
 
 FIGURE-02
-PROCEDURE 
+## PROCEDURE 
  Open tinker cad account 
 1.	Select Arduino uno , bread board , digital input and digital output 
 2.	Connect the circuit as given in the figure 
@@ -50,7 +50,7 @@ PROCEDURE
 
 
 
-CIRCUIT DIAGRAM 
+## CIRCUIT DIAGRAM 
 
 
 
@@ -66,7 +66,33 @@ FIGURE -03
 
 
 
-PROGRAM 
+## PROGRAM 
+```
+int buttonstate = 0;
+
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  buttonstate = digitalRead(2); 
+  if(buttonstate == HIGH)
+  {
+    digitalWrite(13, HIGH);
+  } else
+  {
+    digitalWrite(13, LOW);
+  }
+  
+  delay(15); //
+  
+  
+  
+}
+```
  
  
  
@@ -75,7 +101,14 @@ PROGRAM
 
 
 
-Output of the simulation :
+## Output of the simulation :
+
+### OFF STATE :
+![Screenshot (20)](https://user-images.githubusercontent.com/121165996/233992296-7cdaf2b7-cdc2-4990-83b7-75bfef94c9bb.png)
+
+### ON STATE :
+![Screenshot (21)](https://user-images.githubusercontent.com/121165996/233992366-438b7675-23c4-46c1-b768-03aaffd672dd.png)
+
 
 [My image](username.github.com/repository/img/image.jpg)
 
