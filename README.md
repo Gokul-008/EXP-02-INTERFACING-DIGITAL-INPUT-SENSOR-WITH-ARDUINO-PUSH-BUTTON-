@@ -110,5 +110,7 @@ void loop()
 ![Screenshot (21)](https://user-images.githubusercontent.com/121165996/233992366-438b7675-23c4-46c1-b768-03aaffd672dd.png)
 
 
-[My image](username.github.com/repository/img/image.jpg)
+## RESULT :
+Thus we have made the LED blink by interfacing the input button(push button).
+
 
